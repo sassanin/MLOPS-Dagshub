@@ -1,4 +1,12 @@
 make
 pylint
 pytest-cov
+dagshub
+dvc
+joblib
 pandas
+scikit-learn
+
+
+
+
