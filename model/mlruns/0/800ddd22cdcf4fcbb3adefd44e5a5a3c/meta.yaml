@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/sashi/home/work/Teaching/00-MTech-DSBA/MLOps/MLOPS-Dagshub/model/mlruns/0/800ddd22cdcf4fcbb3adefd44e5a5a3c/artifacts
+end_time: 1656061256713
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+name: ''
+run_id: 800ddd22cdcf4fcbb3adefd44e5a5a3c
+run_uuid: 800ddd22cdcf4fcbb3adefd44e5a5a3c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1656061256706
+status: 4
+tags: []
+user_id: sashi
