@@ -16,6 +16,12 @@ import mlflow.sklearn
 
 import logging
 
+
+mlflow.set_tracking_uri("https://dagshub.com/sashicds/MLOPS-Dagshub.mlflow")
+tracking_uri = mlflow.get_tracking_uri()
+print("Current tracking uri: {}".format(tracking_uri))
+
+
 logging.basicConfig(level=logging.WARN)
 logger = logging.getLogger(__name__)
 
@@ -68,13 +74,5 @@ if __name__ == "__main__":
 
         tracking_url_type_store = urlparse(mlflow.get_tracking_uri()).scheme
 
-        # Model registry does not work with file store
-        if tracking_url_type_store != "file":
-
-            # Register the model
-            # There are other ways to use the Model Registry, which depends on the use case,
-            # please refer to the doc for more information:
-            # https://mlflow.org/docs/latest/model-registry.html#api-workflow
-            mlflow.sklearn.log_model(lr, "model", registered_model_name="ElasticnetWineModel")
-        else:
-            mlflow.sklearn.log_model(lr, "model")
+        # Model registry 
+        mlflow.sklearn.log_model(lr, "model")

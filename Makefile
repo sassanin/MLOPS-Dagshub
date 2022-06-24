@@ -1,6 +1,6 @@
 setup:
-	python3 -m venv ~/.MLOps
-	#source ~/.MLOps/bin/activate
+	python3 -m venv ~/.MLOPS-Dagshub
+	#source ~/.MLOPS-Dagshub/bin/activate
 
 install:
 	pip install --upgrade pip &&\
